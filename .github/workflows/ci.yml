@@ -1,0 +1,10 @@
+name: CI
+
+on:
+  push:
+    branches:
+      -dev
+  pull request:
+    branches:
+      -main
+      -pre-prod
