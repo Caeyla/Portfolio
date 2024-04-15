@@ -8,3 +8,7 @@ on:
     branches:
       -main
       -pre-prod
+  
+jobs:
+  test:
+    
