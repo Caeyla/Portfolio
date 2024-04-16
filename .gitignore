@@ -1,2 +1,3 @@
 access-token.key
 node_modules/
+.vercel
