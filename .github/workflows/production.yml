@@ -12,13 +12,12 @@ jobs:
     Deploy-production:
         runs-on: ubuntu-latest
         steps:
-
-            -uses: actions/checkout@v3
-            -name: Install vercel CLI
-             run: npm install -g vercel
-            -name: Pull vercel environment Information
-             run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
-            -name: vercel build
-             run: vercel --prod --token=${{ secrets.VERCEL_TOKEN }}
-            -name: vercel deploy
-             run: vercel deploy --prebuilt  --prod  --token=${{ secrets.VERCEL_TOKEN }}
+        -uses: actions/checkout@v3
+        -name: Install vercel CLI
+        run: npm install -g vercel
+        -name: Pull vercel environment Information
+        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
+        -name: vercel build
+        run: vercel --prod --token=${{ secrets.VERCEL_TOKEN }}
+        -name: vercel deploy
+        run: vercel deploy --prebuilt  --prod  --token=${{ secrets.VERCEL_TOKEN }}
