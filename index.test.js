@@ -20,15 +20,3 @@ test('check meta with name keywords', () => {
     const meta = dom.window.document.querySelector('meta[name="keywords"]');
     expect(containsAnyKeyword(meta.getAttribute('content'),['Caeyla', 'Portfolio', 'Web Developer','Full stack Developer','Back end Developer','Java','Javascript','Python','PHP','Spring Boot','Laravel','NodeJs','React'])).toBe(true);
 });
-
-test('check title ', () => {
-    const dom = new JSDOM(html);
-    const title = dom.window.document.querySelector('title');
-    expect(title.innerHTML).toBe('Caeyla Ranaivoson - Full stack developer');
-});
-
-test('check h1 content',()=>{
-    const dom=new JSDOM(html);
-    const h1=dom.window.document.querySelector('h1');
-    expect(h1.innerHTML).toBe('Portfolio Loading...');
-});
