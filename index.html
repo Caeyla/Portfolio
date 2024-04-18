@@ -31,24 +31,24 @@
             <main>
                 <span class="pdc-box bg-gradient-to-r from-blue-500 via-blue-400 to-blue-400"></span>
                 <div class="presentation">
-                    <img class="profile-picture w-36 h-36  rounded-full  bg-slate-300 ring-2 ring-gray-500 "
+                    <img class="profile-picture w-36 h-36  rounded-full   ring-2 ring-white "
                         src="./photo/headshot-200x200.jpg" alt="caeyla's photo">
 
                     <button type="button"
                         class="contact text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-3 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-1">Contact
                         Me</button>
                 </div>
-                <h1 class="name text-3xl">Mortel Ranaivoson Caeyla</h1>
+                <h1 class="name text-3xl font-medium">Mortel Ranaivoson Caeyla</h1>
                 <h2 class="job text-xl">Full stack developer</h2>
                 <div class="text-sm font-medium ">
                     <ul class="flex nav-content ">
                         <li>
                             <a href="#" id="about" onclick="changeClass(event)"
-                                class="inline-block   rounded-t-lg hover:text-blue-400   dark:hover:text-blue-400">About</a>
+                                class="inline-block  text-blue-600 border-b-2 border-blue-600 rounded-t-lg  dark:text-blue-500 dark:border-blue-500 ">About</a>
                         </li>
                         <li class="me-2">
                             <a href="#" id="projects" onclick="changeClass(event)"
-                                class="inline-block  text-blue-600 border-b-2 border-blue-600 rounded-t-lg  dark:text-blue-500 dark:border-blue-500"
+                                class="inline-block   rounded-t-lg hover:text-blue-400   dark:hover:text-blue-400"
                                 aria-current="page">Projects</a>
                         </li>
                         <li class="me-2">
@@ -62,12 +62,16 @@
                     </ul>
                 </div>
                 <div id="main-content">
-                    <div class="content" id="about-content">
+                    <div class="content active" id="about-content">
                         <article class="publication">
                             <div class="pub-header">
-                                <img class="w-12 h-12 rounded-full" src="./photo/headshot-80x80.jpg" alt="Caeyla">
-                                <h3 class="author">Caeyla</h3>
-                                <p class="date text-sm">20 Jan 2023</p>
+                                <img class="w-12 h-12 rounded-full ring-2 ring-white" src="./photo/headshot-80x80.jpg"
+                                    alt="Caeyla">
+                                <div id="pub-author">
+                                    <h3 class="author font-medium">Caeyla</h3>
+                                    <span>.</span>
+                                    <p class="date text-sm">20 Jan 2023</p>
+                                </div>
                             </div>
                             <div class="pub">
                                 <h4 class="title">Hello World</h4>
