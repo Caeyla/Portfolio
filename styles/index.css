@@ -19,7 +19,7 @@ body {
 .mycontainer {
     background-color: #f4f9fc;
     width: 98vw;
-    height: 95vh
+    height: 95vh;
 }
 
 nav {
@@ -45,11 +45,10 @@ main {
 }
 
 .pdc-box {
-    background-color: #426981;
-    border: 1px solid #426981;
     width: 100%;
     height: 15vw;
 }
+
 .presentation {
     display: flex;
     flex-direction: row;
@@ -57,37 +56,71 @@ main {
     justify-content: space-between;
 }
 
-button.contact {
-    margin-right: 4vw;
-}
-
 img.profile-picture {
     margin-left: 2vw;
     margin-top: -6vh;
 }
 
-
-
 .nav-content {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    margin: 2vw 2vw;
+}
+#main-content .content{
+    display: none;
+}
+.content.active {
+    display: block !important;
+}
+article.publication {
+    display: flex;
+    flex-direction: column;
+    margin: 2vw 0;
+    width: 100%;
+    border: 1px solid burlywood;
 }
 
+.pub-header {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+    align-items: center;
+}
+
+.pub-content {
+    display: flex;
+    flex-direction: column;
+    margin: 1vw;
+    gap: 1vw;
+}
+
+.pub-image {
+    width: 100%;
+    height: 25vw;
+}
+
+button.contact {
+    margin-right: 2vw;
+}
 
 @media (max-width: 724px) {
-    main{
+    main {
         width: 100%;
     }
-    .pdc-box{
-        height: 40vw;
+
+    .pdc-box {
+        height: 35vw;
     }
+
     img.profile-picture {
-        width: 8rem;
-        height: 8rem;
+        width: 6rem;
+        height: 6rem;
     }
+
     button.contact {
         margin-right: 0;
     }
@@ -95,5 +128,15 @@ img.profile-picture {
     .name,
     .job {
         font-size: 1rem;
+    }
+
+    .pub-image {
+        height: 55vw;
+    }
+
+    button.contact {
+        font-size: 0.6rem;
+        padding: 0.4rem;
+        margin-right: 4vw;
     }
 }
