@@ -20,6 +20,8 @@ body {
     background-color: #f4f9fc;
     width: 98vw;
     height: 95vh;
+    background-attachment: fixed;
+    overflow: scroll;
 }
 
 nav {
@@ -70,12 +72,15 @@ img.profile-picture {
     overflow-x: scroll;
     margin: 2vw 2vw;
 }
-#main-content .content{
+
+#main-content .content {
     display: none;
 }
+
 .content.active {
     display: block !important;
 }
+
 article.publication {
     display: flex;
     flex-direction: column;
@@ -89,7 +94,8 @@ article.publication {
     gap: 1vw;
     align-items: center;
 }
-#pub-author{
+
+#pub-author {
     display: flex;
     flex-direction: row;
     align-items: baseline;
@@ -134,7 +140,8 @@ button.contact {
     .job {
         font-size: 1rem;
     }
-    .date{
+
+    .date {
         font-size: 0.7rem;
     }
 
