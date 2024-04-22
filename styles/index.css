@@ -23,7 +23,6 @@ body {
     background-attachment: fixed;
     overflow: scroll;
 }
-
 nav {
     display: flex;
     flex-direction: row;
