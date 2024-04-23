@@ -1,7 +1,7 @@
-
+// import emailjs from 'emailjs-com';
 const active_class = "inline-block  text-blue-600 border-b-2 border-blue-600 rounded-t-lg  dark:text-blue-500 dark:border-blue-500";
 const inactive_class = "inline-block   rounded-t-lg hover:text-blue-400   dark:hover:text-blue-400";
-const ids = ["about", "projects", "guest-book"];
+const ids = ["about", "projects", "contact"];
 
 function changeClass(event) {
     id = event.target.id;
@@ -18,4 +18,9 @@ function changeClass(event) {
         }
     });
 }
-    
+
+document.getElementById("contactbtn").addEventListener("click", ()=>{
+    var event = {target: {id: "contact"}};
+    changeClass(event);
+    document.getElementById("contact-form").scrollIntoView();
+});

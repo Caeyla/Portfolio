@@ -13,7 +13,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/output.css">
     <link rel="stylesheet" href="./styles/index.css">
-    <!-- <link href="https://rsms.me/inter/inter.css" rel="stylesheet" /> -->
+
     <title>Caeyla Ranaivoson - Full stack developer</title>
 </head>
 
@@ -21,10 +21,9 @@
     <div class="mycontainer">
         <!-- nav bar  -->
         <header>
-            <nav class="navbar">
-                <span>MENU</span>
-                <span>HIRE ME</span>
-            </nav>
+            <!-- <nav class="navbar">
+                <span class="">Contact Me</span>
+            </nav> -->
         </header>
         <!-- main content -->
         <div id="content">
@@ -34,36 +33,34 @@
                     <img class="profile-picture w-36 h-36  rounded-full   ring-2 ring-white "
                         src="./photo/headshot-200x200.jpg" alt="caeyla's photo">
 
-                    <button type="button"
-                        class="contact text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-3 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-1">Contact
+                    <button type="button" id="contactbtn"
+                        class="contact text-white bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-br focus:ring-3 focus:outline-none focus:ring-blue-800 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-1">Contact
                         Me</button>
                 </div>
                 <h1 class="name text-3xl font-medium">Mortel Ranaivoson Caeyla</h1>
                 <h2 class="job text-xl">Full stack developer</h2>
-                <div class="text-sm font-medium ">
-                    <ul class="flex nav-content ">
-                        <li>
-                            <a href="#" id="about" onclick="changeClass(event)"
-                                class="inline-block  text-blue-600 border-b-2 border-blue-600 rounded-t-lg  dark:text-blue-500 dark:border-blue-500 ">About</a>
-                        </li>
-                        <li class="me-2">
-                            <a href="#" id="projects" onclick="changeClass(event)"
-                                class="inline-block   rounded-t-lg hover:text-blue-400   dark:hover:text-blue-400"
-                                aria-current="page">Projects</a>
-                        </li>
-                        <li class="me-2">
-                            <a href="#" id="guest-book" onclick="changeClass(event)"
-                                class="inline-block   rounded-t-lg hover:text-blue-400   dark:hover:text-blue-400">Guestbook</a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="flex nav-content">
+                    <li>
+                        <a href="#" id="about" onclick="changeClass(event)"
+                            class="inline-block  text-blue-600 border-b-2 border-blue-600 rounded-t-lg  dark:text-blue-500 dark:border-blue-500 ">About</a>
+                    </li>
+                    <li class="me-2">
+                        <a href="#" id="projects" onclick="changeClass(event)"
+                            class="inline-block   rounded-t-lg hover:text-blue-400   dark:hover:text-blue-400"
+                            aria-current="page">Projects</a>
+                    </li>
+                    <li class="me-2">
+                        <a href="#" id="contact" onclick="changeClass(event)"
+                            class="inline-block   rounded-t-lg hover:text-blue-400   dark:hover:text-blue-400">Contact</a>
+                    </li>
+                </ul>
                 <div id="main-content">
-                    <div class="content" id="about-content">
-                        <h1 class="text-lg font-bold">Who is Caeyla ?</h1>
+                    <div class="content active" id="about-content">
+                        <h1 class="text-lg font-bold">About Me</h1>
                         <p class="mt-3">I'm an independent creative developer from Antananarivo,Madagascar.I started
                             exploring the exciting
                             world of IT in 2019
-                            during periods of confinement since then I'm constantly improving my skills by participating
+                            during periods of lockdown since then I'm constantly improving my skills by participating
                             in exciting projects.And hope the next is yours !</p>
                         <h1 class="text-lg font-bold mt-3">My Approach</h1>
                         <p class="mt-3">
@@ -86,13 +83,13 @@
                         <h1 class="text-lg font-bold mt-3">My Stack</h1>
                         <p class="mt-3">
                             On the frontend, I work with modern
-                            frameworks such as <span class="font-semibold">React and
-                                Angular </span>.On the backend, I'm skilled in developing robust, scalable APIs
+                            frameworks such as <span class="font-[500]">React and
+                                Angular</span>.On the backend, I'm skilled in developing robust, scalable APIs
                             using
                             languages
-                            such as<span class="font-semibold"> Node.js, PHP,
-                                Python and Java </span>, as well as frameworks such as <span
-                                class="font-semibold">Express, Laravel and Spring Boot </span>. My
+                            such as<span class="font-[500]"> Node.js, PHP,
+                                Python and Java </span>, as well as frameworks such as <span class="font-[500]">Express,
+                                Laravel and Spring Boot </span>. My
                             versatility enables me to
                             effectively manage all aspects of software development, from architecture design to
                             production deployment, including
@@ -103,7 +100,7 @@
                             and
                             end-users.</p>
                     </div>
-                    <div class="content active" id="projects-content">
+                    <div class="content" id="projects-content">
                         <article class="publication">
                             <div class="pub-header">
                                 <img class="w-12 h-12 rounded-full ring-2 ring-white" src="./photo/headshot-80x80.jpg"
@@ -140,7 +137,7 @@
                             <div class="pub">
                                 <h4 class="title">Internship as Java Developer . MEDDoC</h4>
                                 <p class="text">I had the opportunity to conduct an in-depth analysis of the needs of
-                                    patients and healthcare professionals.Build,test  web application  to facilitate
+                                    patients and healthcare professionals.Build,test web application to facilitate
                                     the management of medical records.
                                     A project that gave me the opportunity to showcase my skills and expertise in the
                                     field.
@@ -164,7 +161,7 @@
                                 <h4 class="title">Full Stack Developer . KanteCo</h4>
                                 <p class="text">Build,style and test a reservation management application for a
                                     transport
-                                    cooperative involves the creation of a complete software
+                                    cooperative .Involves the creation of a complete software
                                     package enabling passengers to book journeys, drivers to manage their reservations
                                     and the cooperative to monitor
                                     operations.
@@ -199,8 +196,30 @@
                             <img class="pub-image" src="./photo/pub1-.jpg" alt="publication-photo">
                         </article>
                     </div>
-                    <div class="content" id="guest-book-content">
-                        <h1>Guestbook</h1>
+                    <div class="content" id="contact-content">
+                        <form class="" method="post" action="https://formbold.com/s/3VraQ">
+                            <div>
+                                <span class="uppercase text-sm text-gray-600 font-bold">Full Name</span>
+                                <input class="w-full  text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline border border-gray-300 focus:ring-blue-500 focus:border-blue-500 "
+                                    type="text" placeholder="" name="full_name">
+                            </div>
+                            <div class="mt-8">
+                                <span class="uppercase text-sm text-gray-600 font-bold">Email</span>
+                                <input class="w-full    text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline border border-gray-300 focus:ring-blue-500 focus:border-blue-500  "
+                                    type="text" name="email">
+                            </div>
+                            <div class="mt-8">
+                                <span class="uppercase text-sm text-gray-600 font-bold">Message</span>
+                                <textarea
+                                    class="w-full h-32    text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline border border-gray-300 focus:ring-blue-500 focus:border-blue-500 " name="message"></textarea>
+                            </div>
+                            <div class="mt-8">
+                                <button
+                                    class="uppercase contact w-full text-white bg-gradient-to-r from-blue-400 via-blue-500 to-blue-600 hover:bg-gradient-to-br focus:ring-3 focus:outline-none focus:ring-blue-800 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-1">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </main>
