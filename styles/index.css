@@ -1,13 +1,9 @@
-:root {
-    font-family: Inter, sans-serif;
-    font-feature-settings: 'liga' 1, 'calt' 1;
-    /* fix for Chrome */
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200..900&display=swap');
 
-@supports (font-variation-settings: normal) {
-    :root {
-        font-family: InterVariable, sans-serif;
-    }
+:root {
+    /* use imported inter font */
+    --font-family: 'Inter', sans-serif;
+    background-color: #f4f9fc;
 }
 
 body {
@@ -17,18 +13,15 @@ body {
 }
 
 .mycontainer {
-    background-color: #f4f9fc;
-    width: 98vw;
-    height: 95vh;
+    /* width: 98vw;
+    height: 95vh; */
     background-attachment: fixed;
     overflow: scroll;
 }
+
 nav {
     display: flex;
-    flex-direction: row-reverse;
-    
-    font-weight: 500;
-    font-family: Inter;
+    /* flex-direction: row-reverse; */
 }
 
 #content {
@@ -135,8 +128,8 @@ button.contact {
         margin-right: 0;
     }
 
-    .name,
-    .job {
+    #name,
+    #job {
         font-size: 1rem;
     }
 

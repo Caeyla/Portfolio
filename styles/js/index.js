@@ -18,9 +18,3 @@ function changeClass(event) {
         }
     });
 }
-
-document.getElementById("contactbtn").addEventListener("click", ()=>{
-    var event = {target: {id: "contact"}};
-    changeClass(event);
-    document.getElementById("contact-form").scrollIntoView();
-});
