@@ -16,12 +16,6 @@ body {
     justify-content: center;
 }
 
-.mycontainer {
-    /* width: 98vw;
-    height: 95vh; */
-    background-attachment: fixed;
-    overflow: scroll;
-}
 
 nav {
     display: flex;
@@ -89,6 +83,7 @@ article.publication {
     flex-direction: row;
     gap: 1vw;
     align-items: center;
+    padding-left: .2vw;
 }
 
 #pub-author {
