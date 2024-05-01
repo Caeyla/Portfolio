@@ -70,7 +70,9 @@ img.profile-picture {
 .content.active {
     display: block !important;
 }
-
+#projects-content{
+    margin-top: -3% ;
+}
 article.publication {
     display: flex;
     flex-direction: column;

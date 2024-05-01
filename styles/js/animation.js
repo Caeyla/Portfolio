@@ -27,30 +27,21 @@ myTimeLine.fromTo("#contactbtn",
 
         ease: "bounce.out(1.7)",
     });
-const scrollTl = gsap.timeline({
-    scrollTrigger: {
-        trigger: ".showcase",
-        start: "top center",
-        end: "bottom center",
-        toggleActions: "play complete complete complete",
-        scrub: true,
-        markers: true,
-    }
-});
+// const scrollTl = gsap.timeline({});
 
-scrollTl.fromTo(".showcase", {
+myTimeLine.fromTo(".showcase", {
     opacity: 0,
 },
     {
         x: 0,
         opacity: 1,
-        duration: 5,
+        duration: 2,
 
     })
 const lenis = new Lenis()
 
 lenis.on('scroll', (e) => {
-    console.log("Tay")
+    console.log("scroll")
 })
 
 function raf(time) {
