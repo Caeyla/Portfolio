@@ -33,11 +33,15 @@ myTimeLine.fromTo(".showcase", {
     opacity: 0,
 },
     {
-        x: 0,
         opacity: 1,
         duration: 2,
-
     })
+    myTimeLine.fromTo("#footer", {
+        opacity: 0
+    },{
+        opacity: 1,
+        duration: 1,
+    });
 const lenis = new Lenis()
 
 lenis.on('scroll', (e) => {

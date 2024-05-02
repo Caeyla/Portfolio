@@ -21,6 +21,5 @@ function changeClass(event) {
     });
     var elemToShow = document.getElementById(id + "-content");
     elemToShow.classList.add("active");
-    tl.to(elemToShow, {duration: 2, opacity: 1, display: "block"});
-    
+    tl.to(elemToShow, {duration: 2, opacity: 1, display: "block"});   
 }

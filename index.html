@@ -18,13 +18,6 @@
 
 <body>
     <div class="mycontainer">
-        <!-- nav bar  -->
-        <header>
-            <!-- <nav class="navbar">
-                <span class="">Contact Me</span>
-            </nav> -->
-        </header>
-        <!-- main content -->
         <div id="content">
             <main>
                 <!-- from-blue-500 via-blue-400 to-blue-400 -->
@@ -33,25 +26,27 @@
                 <div class="presentation">
                     <img class="profile-picture w-36 h-36  rounded-full   ring-2 ring-white "
                         src="./photo/headshot-200x200.jpg" alt="caeyla's photo">
-                    <!-- from-blue-400 via-blue-500 to-blue-600 -->
-                    <button type="button" id="contactbtn"
-                        class="contact text-white bg-gradient-to-r from-[#8C4D4D] via-[#845455] to-[#9f6160] hover:bg-gradient-to-br focus:ring-3 focus:outline-none focus:ring-slate-100 dark:focus:ring-slate-100 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-1">Get
-                        My CV</button>
+                    <a href="https://drive.google.com/file/d/1osTJ2l3-qSiGgyiuxNdjfihN7ZeLp4Ta/view?usp=sharing"
+                        download="Caeyla-Ranaivoson-CV">
+                        <button type="button" id="contactbtn"
+                            class="contact text-white bg-gradient-to-r from-[#8C4D4D] via-[#845455] to-[#9f6160] hover:bg-gradient-to-br focus:ring-3 focus:outline-none focus:ring-slate-100  font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-1">Get
+                            My CV</button>
+                    </a>
                 </div>
                 <h1 id="name" class="text-3xl font-medium">Mortel Ranaivoson Caeyla</h1>
                 <h2 id="job" class="text-xl">Full stack developer</h2>
                 <ul class="flex nav-content font-[600]">
                     <li>
-                        <a href="#" id="about" onclick="changeClass(event)" 
+                        <a href="#" id="about" onclick="changeClass(event)"
                             class="inline-block text-[#9f6160]  border-b-2 border-[#9f6160] rounded-t-lg ">About</a>
                     </li>
                     <li class="me-2">
-                        <a href="#" id="projects" onclick="changeClass(event)" 
+                        <a href="#" id="projects" onclick="changeClass(event)"
                             class="inline-block   rounded-t-lg  hover:text-[#9f6160] border-[#9f6160]"
                             aria-current="page">Projects</a>
                     </li>
                     <li class="me-2">
-                        <a href="#" id="contact" onclick="changeClass(event)" 
+                        <a href="#" id="contact" onclick="changeClass(event)"
                             class="inline-block   rounded-t-lg  hover:text-[#9f6160] border-[#9f6160]">Contact</a>
                     </li>
                 </ul>
@@ -134,7 +129,8 @@
                                     updates, backups and monitoring potential
                                     problems.
                                 </p>
-                                <p class="text"> <span class="font-bold">Hello</span>
+                                <p class="text"> <span class="font-bold">Stack : </span> Python, WordPress, Sélenium,
+                                    HTML, CSS, JavaScript
                                 </p>
                             </div>
                             <img class="pub-image" src="./photo/pub1-.jpg" alt="publication-photo">
@@ -186,30 +182,7 @@
                             </div>
                             <img class="pub-image" src="./photo/pub1-.jpg" alt="publication-photo">
                         </article>
-                        <article class="publication">
-                            <div class="pub-header">
-                                <img class="w-12 h-12 rounded-full ring-2 ring-white" src="./photo/headshot-80x80.jpg"
-                                    alt="Caeyla">
-                                <div id="pub-author">
-                                    <h3 class="author font-medium">Caeyla</h3>
-                                    <span>.</span>
-                                    <p class="date text-sm">February 2023</p>
-                                </div>
-                            </div>
-                            <div class="pub">
-                                <h4 class="title">Full Stack Java . Work </h4>
-                                <p class="text">Build,style and test a reservation management application for a
-                                    transport
-                                    cooperative involves the creation of a complete software
-                                    package enabling passengers to book journeys, drivers to manage their reservations
-                                    and the cooperative to monitor
-                                    operations.
-                                </p>
-                                <p class="text"> <span class="font-bold"></span>
-                                </p>
-                            </div>
-                            <img class="pub-image" src="./photo/pub1-.jpg" alt="publication-photo">
-                        </article>
+                       
                     </div>
                     <div class="content" id="contact-content">
                         <form class="" method="post" action="https://formbold.com/s/3VraQ">
@@ -233,17 +206,32 @@
                             </div>
                             <div class="mt-8">
                                 <button
-                                    class="uppercase contact w-full text-white bg-gradient-to-r bg-[#754e4e] hover:bg-gradient-to-br focus:ring-3 focus:outline-none focus:ring-blue-800 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-1">
+                                    class="uppercase contact w-full text-white bg-gradient-to-r from-[#8C4D4D] via-[#845455] to-[#9f6160] hover:bg-gradient-to-br focus:ring-3 focus:outline-none focus:ring-slate-100  font-medium rounded-lg text-sm px-5 py-2.5 text-center mb-1">
                                     Send Message
                                 </button>
                             </div>
                         </form>
                     </div>
                 </div>
+                <footer class="mt-3" id="footer">
+                    <div id="other-contact" class="flex flex-row gap-3 justify-center">
+                        <a href="https://www.linkedin.com/in/caeyla-ranaivoson-474970270/" target="_blank">
+                            <img class="w-6 h-6" src="./photo/linkedin.svg" alt="linkedin">
+                        </a>
+                        <!-- github -->
+                        <a href="https://github.com/Caeyla" target="_blank">
+
+                            <img class="w-6 h-6" src="./photo/github.svg" alt="github">
+                        </a>
+                    </div>
+                    <p class="text-sm text-gray-600 text-center mt-2">© 2024 Caeyla</p>
+                </footer>
             </main>
+
         </div>
     </div>
 </body>
+
 <script src="https://unpkg.com/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
