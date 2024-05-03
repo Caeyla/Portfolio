@@ -99,12 +99,17 @@ article.publication {
     display: flex;
     flex-direction: column;
     margin: 1vw;
-    gap: 1vw;
+    gap: 2vw;
+
 }
 
 .pub-image {
     width: 100%;
     height: 25vw;
+   
+}
+.pub-image, .pub > .title, p.text{
+    margin-top: 1vh;
 }
 
 button.contact {
